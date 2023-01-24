@@ -1,0 +1,233 @@
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body{
+	background-image:url('image/pink.jpg');
+	background-size:cover;
+	font-family:Arial;
+}
+.wrap{
+	max-width:350px;
+	border-radius;20px;
+	margin:auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;
+}
+h2{
+text-align:center;}
+input[type=text],input[type=Email]{
+	     width:100%;
+		 box-sizing:border-box;
+		 padding:12px 5px;
+		 background:rgba(0,0,0,0.10);
+		 outline:none;
+		 border:none;
+		 border-bottom:1px dotted #fff;
+		 color:#fff;
+		 border-radius:5px;
+		 margin:5px;
+		 font-weight:bold;
+}
+input[type=submit] {
+	width:100%;
+	box-sizing:border-box;
+	padding:10px 0;
+	margin-top:30px;
+	outline:none;
+	border:none;
+	background:#60adde;
+	opacity:0.7;
+	border-radius:20px;
+	font-size:20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background:#003366;
+	opacity:0.7;
+}
+footer-bttm{
+	font-family: bold 16px 'Josefin Sans' , sans-serif;
+	padding: 55px 50px;
+	margin-top:80px;
+	background-color:#C0C0C0;
+	box-sizing:border-box;
+}
+.footer-bttm .footer-one,
+.footer-bttm .footer-two,.footer-bttm .footer-three,.footer-bttm .footer-four,{
+display: inline-block;
+vertical-align:top;
+}
+.footer-bttm .footer-one{
+	width:25%;
+}
+.footer-bttm h3{
+	color:#000;
+}
+.footer-bttm .footer-cmp{
+	color:#000;
+	font-size:12px;
+	margin:0;
+	font-weight:normal;
+}
+.footer-bttm .footer-two{
+	width:20%;
+}
+.footer-bttm .footer-two a{
+	line-height: 30px;
+	color:#000;
+	font-weight:bold;
+}
+.footer-bttm .footer-three{
+	display:inline-block;
+	color:#000;
+	vertical-align:middle;
+	margin:0;
+	font-weight: bold;
+}
+.footer-bttm .footer-three i{
+	line-height:30px;
+	margin: 10px 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.footer-bttm .social-icons{
+	margin-top:25px;
+}
+.footer-bttm .social-icons span{
+	color:#000;
+}
+.footer-bttm .social-icons a{
+	display:inline-block;
+	width:30px;
+	height:35px;
+	color:#000;
+	line-height: 30px;
+}
+.footer-bttm .social-icons .fa.fa-twitter:hover{
+	color: #00acee;
+}
+.footer-bttm .social-icons .fa.fa-facebok:hover{
+	color: #3b5998;
+}
+.footer-bttm .social-icons .fa.fa-instagram:hover{
+	color: #3f729b;
+}
+.footer-bttm .social-icons .fa.fa-youtube:hover{
+	color: #00acee;
+}
+@media (max-width: 880px){
+	.footer-bttm{
+		font: bold 16px 'Josefin Sans', sans-serif;
+	}
+
+    .footer-bttm .footer-one,
+.footer-bttm .footer-two,.footer-bttm .footer-three,.footer-bttm .footer-four,{
+display: block;
+width:100%;
+margin-bottom:40px;
+text-align:center;
+}  
+    
+
+
+
+
+		 

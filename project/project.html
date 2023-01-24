@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2><em><b>Cake Delight Bakery</em></b></h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="wasfastyle.css">
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="C:\Users\hp.com\Desktop\Image\cake 1.jpg" style="width:100%" height="300px">
+  <div class="text" style="background:purple">A little bliss in every bite</div>    
+</div>  
+</div>    
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="C:\Image\cake 1.jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="C:\Users\hp.com\Desktop\Image\cake 3.jpg" style="width:100%" height="300px">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="C:\Users\hp.com\Desktop\Image\cake 20.jpg" style="width:100%" height="300px">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="C:\Image\cake 4.jpg" style="width:100%" height="300px">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <br>
+ <div class ="wrap">
+ 
+      <h2> Order Here</h2>
+	  <form>
+		  <input type="text" placeholder="Your name" required>
+		  <input type="text" placeholder="Phone number" required>
+		  <input type="text" placeholder="Email" required>
+		  <input type="text" placeholder="Address" required>
+		  <input type="text" placeholder="Alternate number" required>
+		  <input type="submit" value="Submit" onclick="alert('Your order is placed successfully')"><br>
+		  
+		  
+		  
+		  
+		  <br>
+		  
+</div>
+</form>
+<br><br>
+<footer class="footer-bttm">
+<div class="footer-one"><br><br>
+
+<h3>Cake Delight Bakery</h3>
+<p class="footer-cmp">About Bakery</p>
+</div>
+
+<div class="footer-two">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Cake Menu</a></li>
+<li><a href="#">Term and Condition</a></li>
+
+</ul>
+</div>
+<div class="footer-three">
+<i class="fa fa-map-marker"></i>
+<p><strong>Gulshan Iqbal Block 19 F.B area Karachi</strong></p>
+</div>
+<div><i class="fa fa-envelope"></i>
+<p><strong>info@cakedelightgmail.com</strong></p>
+</div>
+<div><i class="fa fa-phone"></i>
+<p><strong>+92458932188</strong></p>
+</div>
+<div class="footer-four">
+<p class="footer-abt"><span><em><strong>About Cake</em></strong></span><br><br><em><strong>Demo Data</em></strong></p>
+</div>  
+
+<div class="social-icons">
+<span><em><strong>Be updated With Us</em></strong></span><br>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+</div>
+
+<br><br>
+<br><br>
+<textarea rows="4" cols="80" name="comment" form="usrform">
+Your Feed back...</textarea>
+<center>
+ <div class="footer-bottom">
+        <p><strong>Copyright &copy;2021 cakedelight. designed</strong></p>
+ </div>	
+ </center>
+  
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</s
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	  
+ 
+ </body>
+ </html>

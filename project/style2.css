@@ -1,0 +1,43 @@
+
+body {
+	background-image: url('image/pink.jpg');
+	margin: 30px;
+	background-color: #E9E9E9;
+}
+
+div.polaroid {
+	width: 284px;
+	padding: 10px 10px 20px 10px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate_right {
+	float: left;
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
+
+div.rotate_left {
+	float: left;
+	-ms-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+div.rotate_left {
+	float: left;
+	-ms-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
